@@ -26,6 +26,7 @@ class App extends React.Component {
     const response = await youtube.get('search',{
       params: {
         part: 'snippet',
+        type: 'video',
         maxResults: 5,
         key: 'AIzaSyDiLzOrZe5yYpGoslPMANLrspnkGoJSyPs',
         q: searchTerm
@@ -40,7 +41,7 @@ class App extends React.Component {
     return (
       <Grid justify="center" style={{ width: '100vw' }} container spacing={10}>
         <Grid item xs={12}>
-          <Grid container spacing={10}>
+          <Grid container spacing={3}>
             <Grid item xs={12}>
               <SearchBar onFormSubmit={this.handleSubmit} />
             </Grid>
