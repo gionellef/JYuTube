@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/JYuTube/static/js/main.2a34421c.chunk.js",
-    "main.js.map": "/JYuTube/static/js/main.2a34421c.chunk.js.map",
+    "main.js": "/JYuTube/static/js/main.2fee6bd5.chunk.js",
+    "main.js.map": "/JYuTube/static/js/main.2fee6bd5.chunk.js.map",
     "runtime~main.js": "/JYuTube/static/js/runtime~main.199d037b.js",
     "runtime~main.js.map": "/JYuTube/static/js/runtime~main.199d037b.js.map",
     "static/js/2.1b8a55f2.chunk.js": "/JYuTube/static/js/2.1b8a55f2.chunk.js",
     "static/js/2.1b8a55f2.chunk.js.map": "/JYuTube/static/js/2.1b8a55f2.chunk.js.map",
     "index.html": "/JYuTube/index.html",
-    "precache-manifest.d21a6ca29c705b96fa6b91b16dc939c3.js": "/JYuTube/precache-manifest.d21a6ca29c705b96fa6b91b16dc939c3.js",
+    "precache-manifest.e623c8bcd2f99a19821a1ace665fc0a7.js": "/JYuTube/precache-manifest.e623c8bcd2f99a19821a1ace665fc0a7.js",
     "service-worker.js": "/JYuTube/service-worker.js"
   }
 }
