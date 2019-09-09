@@ -5,7 +5,7 @@
   background-color: #f5f5f5;
   margin-top: calc( #{$header-nav-height} + #{1px} );
   overflow-y: auto;
-  padding-bottom: $header-nav-height;
+  padding-bottom: calc( #{$header-nav-height} + #{8px} );
 
   .sidebar-item:hover {
     background: #ebebeb;
