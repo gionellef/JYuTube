@@ -1,8 +1,10 @@
+@import '../../styles/shared.scss';
+
 .ui.menu.top-menu {
   border: none; // To remove semantic-ui's bottom border
-
+  height: $header-nav-height;
   .logo {
-    width: 17rem;
+    width: $sidebar-left-width;
   }
 
   .nav-container {
