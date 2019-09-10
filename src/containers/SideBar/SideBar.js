@@ -6,6 +6,7 @@ import './SideBar.scss';
 import { SideBarHeader } from './SideBarHeader/SideBarHeader';
 import { SideBarItem } from './SideBarItem/SideBarItem';
 import { Subscriptions } from './Subscriptions/Subscriptions';
+import { SideBarFooter } from './SideBarFooter/SideBarFooter';
 
 export class SideBar extends React.Component {
   render() {
@@ -36,6 +37,8 @@ export class SideBar extends React.Component {
         <SideBarItem label='Send feedback' icon='comment' />
 
         <Divider />
+
+        <SideBarFooter />
       </Menu>
     );
   }
