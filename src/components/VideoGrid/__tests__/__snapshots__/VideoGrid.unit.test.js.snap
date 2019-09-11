@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoGrid renders VideoGrid with divider 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+</Fragment>
+`;
+
+exports[`VideoGrid renders VideoGrid with divider title 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+</Fragment>
+`;
+
+exports[`VideoGrid renders VideoGrid with hideDivider 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
+
+exports[`VideoGrid renders VideoGrid with hideDivider prop false 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
+
+exports[`VideoGrid renders VideoGrid with hideDivider prope 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
+
+exports[`VideoGrid renders VideoGrid with title 1`] = `
+<Fragment>
+  <VideoGridHeader
+    title="Trending"
+  />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
+
+exports[`VideoGrid renders VideoGrid without props 1`] = `
+<Fragment>
+  <VideoGridHeader />
+  <div
+    className="video-grid"
+  >
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+    <VideoPreview />
+  </div>
+  <Divider />
+</Fragment>
+`;
