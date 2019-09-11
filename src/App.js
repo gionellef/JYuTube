@@ -1,16 +1,15 @@
 import React from 'react';
 
-import HeaderNav from './containers/HeaderNav/HeaderNav'
+import { AppLayout } from './components/AppLayout/AppLayout';
 import { Home } from './containers/Home/Home';
 
 
 class App extends React.Component {
   render () {
     return (
-      <React.Fragment>
-        <HeaderNav />
+      <AppLayout>
         <Home />
-      </React.Fragment>
+      </AppLayout>
     );
   }
 }
