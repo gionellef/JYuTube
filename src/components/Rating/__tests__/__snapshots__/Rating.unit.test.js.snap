@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rating renders Rating with props likes and dislikes 1`] = `
+<div
+  className="rating"
+>
+  <div
+    className="thumbs-up"
+  >
+    <Icon
+      as="i"
+      name="thumbs up outline"
+    />
+    <span>
+      1000
+    </span>
+  </div>
+  <div
+    className="thumbs-down"
+  >
+    <Icon
+      as="i"
+      name="thumbs down outline"
+    />
+    <span>
+      100
+    </span>
+  </div>
+  <Progress
+    className="progress"
+    percent={90.9090909090909}
+    size="tiny"
+  />
+</div>
+`;
+
+exports[`Rating renders Rating without props 1`] = `""`;

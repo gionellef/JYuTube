@@ -5,21 +5,13 @@ exports[`Watch renders Watch view 1`] = `
   className="watch-grid"
 >
   <Video
-    className="videoPlayer"
+    className="video"
     id="P5ktQh3sWZk"
   />
-  <div
+  <VideoMetadata
     className="metadata"
-    style={
-      Object {
-        "background": "#F91112",
-        "height": "100px",
-        "width": "100%",
-      }
-    }
-  >
-    Metadata
-  </div>
+    viewCount={1000}
+  />
   <div
     className="video-info-box"
     style={
@@ -45,7 +37,7 @@ exports[`Watch renders Watch view 1`] = `
     Comments
   </div>
   <RelatedVideos
-    className="relatedVideos"
+    className="related-videos"
   />
 </div>
 `;
