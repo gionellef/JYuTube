@@ -15,12 +15,6 @@ exports[`RelatedVideos 1`] = `
     <VideoPreview
       horizontal={true}
     />
-    <VideoPreview
-      horizontal={true}
-    />
-    <VideoPreview
-      horizontal={true}
-    />
   </div>
 </Fragment>
 `;
