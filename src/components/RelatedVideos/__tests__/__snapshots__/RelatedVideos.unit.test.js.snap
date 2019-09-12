@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RelatedVideos 1`] = `
+<Fragment>
+  <div
+    className="related-videos"
+  >
+    <NextUpVideo />
+    <VideoPreview
+      horizontal={true}
+    />
+    <VideoPreview
+      horizontal={true}
+    />
+    <VideoPreview
+      horizontal={true}
+    />
+    <VideoPreview
+      horizontal={true}
+    />
+    <VideoPreview
+      horizontal={true}
+    />
+  </div>
+</Fragment>
+`;
