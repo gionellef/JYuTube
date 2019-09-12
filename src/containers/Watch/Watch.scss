@@ -1,5 +1,5 @@
 @import '../../styles/shared.scss';
 
 .watch-component {
-  margin-top: $header-nav-height;
+  margin-top: calc(#{$header-nav-height} + #{5px});
 }
