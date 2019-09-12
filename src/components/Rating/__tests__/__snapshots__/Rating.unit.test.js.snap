@@ -34,4 +34,27 @@ exports[`Rating renders Rating with props likes and dislikes 1`] = `
 </div>
 `;
 
-exports[`Rating renders Rating without props 1`] = `""`;
+exports[`Rating renders Rating without props 1`] = `
+<div
+  className="rating"
+>
+  <div
+    className="thumbs-up"
+  >
+    <Icon
+      as="i"
+      name="thumbs up outline"
+    />
+    <span />
+  </div>
+  <div
+    className="thumbs-down"
+  >
+    <Icon
+      as="i"
+      name="thumbs down outline"
+    />
+    <span />
+  </div>
+</div>
+`;
