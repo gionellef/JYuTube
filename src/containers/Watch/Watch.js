@@ -1,17 +1,16 @@
 import React from 'react';
 
-import { Video } from '../../components/Video/Video';
-import { VideoPreview } from '../../components/VideoPreview/VideoPreview';
+// import { Video } from '../../components/Video/Video';
+// import { VideoPreview } from '../../components/VideoPreview/VideoPreview';
 
 import './Watch.scss';
+import { RelatedVideos } from '../../components/RelatedVideos/RelatedVideos';
 
 export class Watch extends React.Component {
   render() {
     return (
       <div className='watch-component'>
-        <VideoPreview />
-        <VideoPreview horizontal={false} />
-        <VideoPreview horizontal={true} />
+        <RelatedVideos />
         
       </div>
       // <div style={{maxWidth: '80%'}}>
