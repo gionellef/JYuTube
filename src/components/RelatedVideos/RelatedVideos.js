@@ -13,6 +13,12 @@ export function RelatedVideos(props) {
         <VideoPreview horizontal={true} />
         <VideoPreview horizontal={true} />
         <VideoPreview horizontal={true} />
+        <VideoPreview horizontal={true} />
+        <VideoPreview horizontal={true} />
+        <VideoPreview horizontal={true} />
+        <VideoPreview horizontal={true} />
+        <VideoPreview horizontal={true} />
+        <VideoPreview horizontal={true} />
       </div>
     </React.Fragment>
   );
