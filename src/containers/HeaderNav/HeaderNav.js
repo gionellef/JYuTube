@@ -12,7 +12,7 @@ export class HeaderNav extends React.Component {
       <Menu borderless className='top-menu' fixed='top'>
         {/* LOGO */}
         <Menu.Item header className='logo'>
-          <Link to='/'><Image src={logo} size='tiny' /></Link>
+          <Link to='/' className='logo-link'><Image src={logo} size='tiny' /></Link>
         </Menu.Item>
         
         <Menu.Menu className='nav-container'>

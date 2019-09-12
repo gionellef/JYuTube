@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video renders Video on Watch with prop.id 1`] = `
+<div
+  className="video-container"
+>
+  <div
+    className="video"
+  >
+    <iframe
+      allow="autoplay; encrypted-media"
+      allowFullScreen={true}
+      className="video-player"
+      frameBorder="0"
+      src="https://www.youtube.com/embed/P5ktQh3sWZk"
+      title="video"
+    />
+  </div>
+</div>
+`;
+
+exports[`Video renders Video on Watch without prop.id 1`] = `""`;

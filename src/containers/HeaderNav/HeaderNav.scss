@@ -5,6 +5,13 @@
   height: $header-nav-height;
   .logo {
     width: $sidebar-left-width;
+    
+    .logo-link {
+      padding-right: 20%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      outline: none;
+    }
   }
 
   .nav-container {

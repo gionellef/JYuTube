@@ -1,11 +1,15 @@
 import React from 'react';
 
+import { Video } from '../../components/Video/Video';
+
 import './Watch.scss';
 
 export class Watch extends React.Component {
   render() {
     return (
-      <div className='watch-component'>The watch component goes here</div>
+      <div style={{maxWidth: '80%'}}>
+        <Video id='P5ktQh3sWZk' />
+      </div>
     );
   }
 }
