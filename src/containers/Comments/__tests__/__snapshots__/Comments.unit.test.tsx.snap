@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comments renders without numberOfComments 1`] = `
+<div>
+  <CommentsHeader
+    numberOfComments={86923}
+  />
+  <AddComment />
+  <Comment />
+  <Comment />
+  <Comment />
+</div>
+`;
