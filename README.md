@@ -16,4 +16,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Version 2.0 (September 09, 2019)
  - rework from ground up to make more youtube like
- -
+
+Version 2.1 (September 13, 2019)
+ - typescript support idk
