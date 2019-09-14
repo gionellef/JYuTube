@@ -1,5 +1,7 @@
 A fully working youtube clone using React called JYuTube.
 
+Travis CI snapshot testing: [![Build Status](https://travis-ci.org/gionellef/JYuTube.svg?branch=master)](https://travis-ci.org/gionellef/JYuTube)
+
 ## Available Scripts
 
 In the project directory, you can run:
