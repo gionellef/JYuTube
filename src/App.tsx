@@ -1,11 +1,11 @@
 import * as React from 'react';
 
+import Home from './containers/Home/Home';
 import AppLayout from './components/AppLayout/AppLayout';
-import { Home } from './containers/Home/Home';
 import { Watch } from './containers/Watch/Watch';
 import { Route, Switch } from 'react-router-dom';
 
-import { bindActionCreators, Dispatch } from 'redux';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { youtubeLibraryLoaded } from './store/actions/api';
 
@@ -18,24 +18,23 @@ declare global {
 }
 
 class App extends React.Component<any, any> {
-  render () {
+  render() {
     return (
       <AppLayout>
         <Switch>
-          <Route path='/watch' component={ Watch } />
-          <Route path='/' exact component={ Home } />
+          <Route path="/watch" component={Watch} />
+          <Route path="/" component={Home} />
         </Switch>
       </AppLayout>
     );
   }
-
   componentDidMount() {
     this.loadYoutubeApi();
   }
 
   loadYoutubeApi() {
-    const script = document.createElement('script');
-    script.src = 'https://apis.google.com/js/client.js';
+    const script = document.createElement("script");
+    script.src = "https://apis.google.com/js/client.js";
 
     script.onload = () => {
       window.gapi.load('client', () => {
@@ -44,14 +43,14 @@ class App extends React.Component<any, any> {
           this.props.youtubeLibraryLoaded();
         });
       });
-    }
+    };
 
     document.body.appendChild(script);
   }
 }
 
-function mapDispatchToProps(dispatch: Dispatch) {
-  return bindActionCreators({youtubeLibraryLoaded}, dispatch);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ youtubeLibraryLoaded }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(App);

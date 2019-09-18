@@ -9,27 +9,28 @@ import './VideoGrid.scss';
 interface VideoGridProps {
   hideDivider?: boolean,
   title?: string,
+  videos: any,
 };
 
 const VideoGrid : React.FC<VideoGridProps> = (props) => {
+  
+  if (!props.videos || !props.videos.length) {
+    return <div />
+  }
+
+  const gridItems = props.videos.map(video => {
+    return (
+      <VideoPreview video={video} key={video.id} />
+    )
+  });
+  
   const divider = props.hideDivider ? null : <Divider />;
 
   return (
     <React.Fragment>
       <VideoGridHeader title={ props.title } />
       <div className='video-grid'>
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
-        <VideoPreview />
+        { gridItems }
       </div>
       { divider }
     </React.Fragment>
