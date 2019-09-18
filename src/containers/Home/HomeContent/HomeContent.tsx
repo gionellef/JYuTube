@@ -22,7 +22,6 @@ export class HomeContent extends React.Component<any, any> {
   }
 
   getTrendingVideos() {
-    if (!this.props.mostPopularVideos)
     return this.props.mostPopularVideos.slice(0, NUMBER_TRENDING_VIDEOS);
   }
 }
