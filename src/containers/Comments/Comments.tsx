@@ -7,8 +7,8 @@ import { Comment } from './Comment/Comment';
 import './Comments.scss';
 
 interface Props {
-  className: string;
-  numberOfComments: number;
+  className?: string;
+  numberOfComments?: number;
 }
 
 export class Comments extends React.Component<Props> {
