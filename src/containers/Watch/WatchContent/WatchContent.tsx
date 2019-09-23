@@ -21,7 +21,7 @@ class WatchContent extends React.Component<any, any> {
       <div className='watch-grid'>
         <Video className='video' id={this.props.videoId} />
         <VideoMetadata className='metadata' video={this.props.video} />
-        <VideoInfoBox className='video-info-box' />
+        <VideoInfoBox className='video-info-box' video={this.props.video} />
         <Comments className='comments' />
         <RelatedVideos className='relatedVideos' />
       </div>
