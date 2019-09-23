@@ -26,6 +26,10 @@ export default function videos(state = initialState, action) {
   }
 }
 
+export const getVideoById = (state, videoId) => {
+  return state.videos.byId[videoId];
+};
+
 function reduceWatchDetails(responses, prevState) {
   const videoDetailResponse = responses.find(r => r.result.kind === VIDEO_LIST_RESPONSE);
   const video = videoDetailResponse.result.items[0];
