@@ -8,7 +8,7 @@ import { VideoInfoBox } from '../../components/VideoInfoBox/VideoInfoBox';
 import './Watch.scss';
 import { Comments } from '../Comments/Comments';
 
-export class Watch extends React.Component {
+export class Watch extends React.Component<any, any> {
   render() {
     return (
       <div className='watch-grid'>
@@ -20,5 +20,10 @@ export class Watch extends React.Component {
       </div>
 
     );
+  }
+
+  getVideoId() {
+    const searchParams = new URLSearchParams(this.props.location.search);
+    return searchParams.get('v');
   }
 }
