@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Home from './containers/Home/Home';
 import AppLayout from './components/AppLayout/AppLayout';
-import { Watch } from './containers/Watch/Watch';
+import Watch from './containers/Watch/Watch';
 import { Route, Switch, withRouter } from 'react-router-dom';
 
 import { bindActionCreators } from 'redux';

@@ -35,7 +35,6 @@ export class Home extends React.Component<any, any> {
   }
 
   componentDidUpdate(prevProps) {
-    console.log("TUTA");
     if (this.props.youtubeLibraryLoaded !== prevProps.youtubeLibraryLoaded) {
       this.fetchCategoriesAndMostPopularVideos();
     } else if (this.props.videoCategories !== prevProps.videoCategories) {
