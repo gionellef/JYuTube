@@ -2,7 +2,7 @@ import { createSelector } from 'reselect';
 
 import { MOST_POPULAR, MOST_POPULAR_BY_CATEGORY, VIDEO_CATEGORIES } from '../actions/video';
 import { SUCCESS } from '../actions';
-import { WATCH_DETAILS } from '../actions/watch';
+import { WATCH_DETAILS, VIDEO_DETAILS } from '../actions/watch';
 import { VIDEO_LIST_RESPONSE, SEARCH_LIST_RESPONSE } from '../api/youtube-response-types';
 
 const initialState = {
@@ -20,10 +20,32 @@ export default function videos(state = initialState, action) {
     case MOST_POPULAR_BY_CATEGORY[SUCCESS]:
       return reduceFetchMostPopularVideosByCategory(action.response, action.categories, state);
     case WATCH_DETAILS[SUCCESS]:
-      return reduceWatchDetails(action.response, state);  
+      return reduceWatchDetails(action.response, state);
+    case VIDEO_DETAILS[SUCCESS]:
+      return reduceVideoDetails(action.response, state);
     default:
       return state;
   }
+}
+
+function reduceVideoDetails(responses, prevState) {
+  const videoResponses = responses.filter(response => response.result.kind === VIDEO_LIST_RESPONSE);
+  const parsedVideos = videoResponses.reduce((videoMap, response) => {
+    // we're explicitly asking for a video with a particular id
+    // so the response set must either contain 0 items (if a video with the id does not exist)
+    // or at most one item (i.e. the channel we've been asking for)
+    const video = response.result.items ? response.result.items[0] : null;
+    if (!video) {
+      return videoMap;
+    }
+    videoMap[video.id] = video;
+    return videoMap;
+  }, {});
+
+  return {
+    ...prevState,
+    byId: { ...prevState.byId, ...parsedVideos },
+  };
 }
 
 function reduceRelatedVideosRequest(responses) {
