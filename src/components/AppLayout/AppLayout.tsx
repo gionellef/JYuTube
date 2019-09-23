@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { HeaderNav } from '../../containers/HeaderNav/HeaderNav';
+import ScrollToTop from '../ScrollToTop/ScrollToTop';
 
 import './AppLayout.scss'
 
@@ -11,10 +12,12 @@ interface Props {
 const AppLayout : React.FC<Props> = (props) =>  {
   const { children } = props;
   return (
-    <div className='app-layout'>
-      <HeaderNav />
-      { children }
-    </div>
+    <ScrollToTop>
+      <div className='app-layout'>
+        <HeaderNav />
+        { children }
+      </div>
+    </ScrollToTop>
   );
 }
 

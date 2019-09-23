@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Image } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 import TimeAgo from 'javascript-time-ago';
 import en from 'javascript-time-ago/locale/en';
@@ -24,6 +25,8 @@ export class VideoPreview extends React.Component<any, any> {
     const horizontal = this.props.horizontal ? 'horizontal' : null;
 
     return (
+      <Link to={{pathname: this.props.pathname, search: this.props.search}}>
+      
       <div className={['video-preview', horizontal].join(' ')}>
         <div className='image-container'>
           <Image src={video.snippet.thumbnails.medium.url} />
@@ -40,6 +43,8 @@ export class VideoPreview extends React.Component<any, any> {
           </div>
         </div>
       </div>
+
+      </Link>
     );
   }
 
