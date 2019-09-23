@@ -26,8 +26,7 @@ export function* fetchMostPopularVideosByCategory(categories) {
   const requests = categories.map(category => {
     const wrapper = ignoreErrors(api.buildMostPopularVideosRequest, 12, false, null, category);
     return call(wrapper);
-  }); 
-
+  });
   try {
     const response = yield all(requests);
     yield put(videoActions.mostPopularByCategory.success(response, categories));
@@ -38,7 +37,7 @@ export function* fetchMostPopularVideosByCategory(categories) {
 
 export function* watchMostPopularVideosByCategory() {
   while (true) {
-    const {categories} = yield take(videoActions.MOST_POPULAR_BY_CATEGORY[REQUEST]);
+    const { categories } = yield take(videoActions.MOST_POPULAR_BY_CATEGORY[REQUEST]);
     yield fork(fetchMostPopularVideosByCategory, categories);
   }
 }
